@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+* {
+    font-family: 'EB Garamond', serif;
+}
+body{
+    margin: 0 50px;
+    height: 100vh;
+    background-image: radial-gradient(circle at 17% 5%, rgba(185, 185, 185,0.1) 0%, rgba(185, 185, 185,0.1) 33.333%,rgba(216, 216, 216,0.1) 33.333%, rgba(216, 216, 216,0.1) 66.666%,rgba(247, 247, 247,0.1) 66.666%, rgba(247, 247, 247,0.1) 99.999%),radial-gradient(circle at 36% 54%, rgba(52, 52, 52,0.1) 0%, rgba(52, 52, 52,0.1) 33.333%,rgba(111, 111, 111,0.1) 33.333%, rgba(111, 111, 111,0.1) 66.666%,rgba(170, 170, 170,0.1) 66.666%, rgba(170, 170, 170,0.1) 99.999%),radial-gradient(circle at 62% 35%, rgba(209, 209, 209,0.1) 0%, rgba(209, 209, 209,0.1) 33.333%,rgba(107, 107, 107,0.1) 33.333%, rgba(107, 107, 107,0.1) 66.666%,rgba(5, 5, 5,0.1) 66.666%, rgba(5, 5, 5,0.1) 99.999%),linear-gradient(45deg, rgb(49, 231, 152),rgb(120, 182, 17));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.app{
+    width: 400px;
+    height: 500px;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 45px;
+    color: aqua;
+    overflow-y: scroll;
+    background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),linear-gradient(292deg, rgba(157, 157, 157,0.05) 0%, rgba(157, 157, 157,0.05) 50%,rgba(176, 176, 176,0.05) 50%, rgba(176, 176, 176,0.05) 100%),linear-gradient(272deg, rgba(73, 73, 73,0.05) 0%, rgba(73, 73, 73,0.05) 50%,rgba(98, 98, 98,0.05) 50%, rgba(98, 98, 98,0.05) 100%),linear-gradient(230deg, rgba(222, 222, 222,0.05) 0%, rgba(222, 222, 222,0.05) 50%,rgba(175, 175, 175,0.05) 50%, rgba(175, 175, 175,0.05) 100%),linear-gradient(286deg, rgba(175, 175, 175,0.05) 0%, rgba(175, 175, 175,0.05) 50%,rgba(37, 37, 37,0.05) 50%, rgba(37, 37, 37,0.05) 100%),linear-gradient(160deg, rgba(14, 14, 14,0.05) 0%, rgba(14, 14, 14,0.05) 50%,rgba(129, 129, 129,0.05) 50%, rgba(129, 129, 129,0.05) 100%),linear-gradient(72deg, rgba(26, 26, 26,0.05) 0%, rgba(26, 26, 26,0.05) 50%,rgba(202, 202, 202,0.05) 50%, rgba(202, 202, 202,0.05) 100%),linear-gradient(14deg, rgba(254, 254, 254,0.05) 0%, rgba(254, 254, 254,0.05) 50%,rgba(23, 23, 23,0.05) 50%, rgba(23, 23, 23,0.05) 100%),linear-gradient(60deg, rgba(194, 194, 194,0.05) 0%, rgba(194, 194, 194,0.05) 50%,rgba(16, 16, 16,0.05) 50%, rgba(16, 16, 16,0.05) 100%),radial-gradient(circle at center center, hsl(12,88%,58%),hsl(12,88%,58%));
+}
+.app::-webkit-scrollbar{
+    width: 0 !important;
+}
+#addnew{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-image: linear-gradient(135deg, rgba(238, 238, 238, 0.1),rgba(16, 16, 16, 0.1)),linear-gradient(183deg, rgb(202, 255, 50),rgb(223, 14, 20));
+    border-radius: 40px;
+    cursor: pointer;
+}
+.fa-plus{
+    background-color: rgb(18, 207, 232);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(56, 10, 244);
+}
+#tasks{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+#tasks div{
+    background-image: linear-gradient(45deg, rgba(153, 61, 59,0.2) 0%, rgba(153, 61, 59,0.2) 16.667%,rgba(103, 52, 24,0.2) 16.667%, rgba(103, 52, 24,0.2) 33.334%,rgba(203, 69, 93,0.2) 33.334%, rgba(203, 69, 93,0.2) 50.001%,rgba(178, 65, 76,0.2) 50.001%, rgba(178, 65, 76,0.2) 66.668%,rgba(128, 56, 41,0.2) 66.668%, rgba(128, 56, 41,0.2) 83.335%,rgba(78, 48, 7,0.2) 83.335%, rgba(78, 48, 7,0.2) 100.002%),linear-gradient(22.5deg, rgba(153, 61, 59,0.2) 0%, rgba(153, 61, 59,0.2) 16.667%,rgba(103, 52, 24,0.2) 16.667%, rgba(103, 52, 24,0.2) 33.334%,rgba(203, 69, 93,0.2) 33.334%, rgba(203, 69, 93,0.2) 50.001%,rgba(178, 65, 76,0.2) 50.001%, rgba(178, 65, 76,0.2) 66.668%,rgba(128, 56, 41,0.2) 66.668%, rgba(128, 56, 41,0.2) 83.335%,rgba(78, 48, 7,0.2) 83.335%, rgba(78, 48, 7,0.2) 100.002%),linear-gradient(0deg, rgba(153, 61, 59,0.2) 0%, rgba(153, 61, 59,0.2) 16.667%,rgba(103, 52, 24,0.2) 16.667%, rgba(103, 52, 24,0.2) 33.334%,rgba(203, 69, 93,0.2) 33.334%, rgba(203, 69, 93,0.2) 50.001%,rgba(178, 65, 76,0.2) 50.001%, rgba(178, 65, 76,0.2) 66.668%,rgba(128, 56, 41,0.2) 66.668%, rgba(128, 56, 41,0.2) 83.335%,rgba(78, 48, 7,0.2) 83.335%, rgba(78, 48, 7,0.2) 100.002%),linear-gradient(90deg, rgb(137, 137, 137),rgb(44, 44, 44));
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    gap: 5px;
+}
+#tasks div .options i{
+    cursor: pointer;
+}
+#msg{
+    color: red;
+}
